@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="so" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMPETROLEUM COMPANY - Shidaal Tayo Leh & Portal-ka Macaamiisha</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sompetro: {
+                            blue: '#38b6ff',
+                            dark: '#0b2545',
+                            navy: '#07162c',
+                            red: '#e52d27',
+                            yellow: '#f9ba00',
+                            lightBg: '#f4f9fd'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .print-card {
+                border: 1px solid #ccc !important;
+                box-shadow: none !important;
+            }
+        }
+        .print-only {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-sky-500 selection:text-white">
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/90 border-b border-slate-800/80 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo & Brand Name -->
+            <a href="#home" class="flex items-center gap-3.5 group">
+                <div class="w-12 h-12 rounded-full overflow-hidden bg-white p-0.5 border-2 border-sky-400 shadow-md shadow-sky-500/20 flex items-center justify-center shrink-0">
+                    <img src="sommm_4.jpeg" alt="SomPetroleum Logo" class="w-full h-full object-contain rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/100x100/38b6ff/ffffff?text=SOMPETRO';">
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider bg-gradient-to-r from-sky-400 via-white to-red-500 bg-clip-text text-transparent block">SOMPETROLEUM</span>
+                    <span class="text-[10px] text-amber-400 font-extrabold uppercase tracking-widest block -mt-1">Company Ltd.</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-6 space-x-reverse text-sm font-semibold text-slate-300">
+                <a href="#home" class="hover:text-sky-400 transition-colors">Bogga Hore</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Adeegyada</a>
+                <a href="#calculator" class="hover:text-sky-400 transition-colors">Xisaabiyaha</a>
+                <a href="#portal" class="hover:text-sky-400 transition-colors flex items-center gap-2 text-sky-400 bg-sky-950/50 px-3 py-1.5 rounded-lg border border-sky-800/50">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    Portal-ka Macaamiisha
+                </a>
+                <a href="#about" class="hover:text-sky-400 transition-colors">Nusaaga Shirkadda</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Nala Xiriir</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <button onclick="openLoginModal()" class="hidden sm:flex bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm items-center gap-2 transition">
+                    <i class="fa-solid fa-right-to-bracket text-sky-400"></i>
+                    <span>Soo Gal Akoonka</span>
+                </button>
+                <a href="#portal" class="bg-gradient-to-r from-sky-500 via-sky-600 to-blue-700 hover:from-sky-400 hover:to-blue-600 text-white font-bold px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm shadow-lg shadow-sky-500/20 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span>Eeg Xisaabtaada</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="relative py-16 lg:py-24 overflow-hidden border-b border-slate-800">
+            <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-10 w-96 h-96 bg-red-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-6 shadow-inner">
+                            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                            Shidaal Tayo Sare & Adeeg Digital Hufan
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-6">
+                            SOMPETROLEUM <br>
+                            <span class="bg-gradient-to-r from-sky-400 via-amber-300 to-red-500 bg-clip-text text-transparent">Keydka Shidaalka ee Kalsoonida</span>
+                        </h1>
+                        
+                        <p class="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed max-w-2xl">
+                            SomPetroleum Company waxay bixisaa shidaal naqshadeeyay inuu ilaaliyo matoorada gaadiidkaaga. Waxaan macaamiisha ganacsiga u diyaarinay nidaam digital ah oo ay si toos ah u maamulaan shidaal qaadashada gaadiidkooda.
+                        </p>
+
+                        <div class="flex flex-wrap items-center gap-4">
+                            <a href="#portal" class="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold px-7 py-3.5 rounded-xl shadow-xl shadow-sky-500/20 transition flex items-center gap-2">
+                                <i class="fa-solid fa-list-check"></i> Eeg Akoonnada Macaamiisha
+                            </a>
+                            <a href="#contact" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold px-7 py-3.5 rounded-xl transition flex items-center gap-2">
+                                <i class="fa-solid fa-phone text-sky-400"></i> Nala Soo Xiriir
+                            </a>
+                        </div>
+
+                        <!-- Stats Highlights -->
+                        <div class="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-slate-800">
+                            <div>
+                                <div class="text-2xl font-black text-white">100%</div>
+                                <div class="text-xs text-slate-400 mt-1 font-medium">Tayo Dammaanad leh</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-amber-400">24/7</div>
+                                <div class="text-xs text-slate-400 mt-1 font-medium">Adeeg Joogto Ah</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-sky-400">6 Akoon</div>
+                                <div class="text-xs text-slate-400 mt-1 font-medium">Portal-ka Macaamiisha</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Fuel Price Widget Card -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden backdrop-blur-xl">
+                            <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+                                <div class="flex items-center gap-3">
+                                    <img src="sommm_4.jpeg" alt="SomPetroleum Logo" class="w-10 h-10 rounded-full object-contain bg-white p-0.5 border border-sky-400" onerror="this.onerror=null; this.src='https://placehold.co/100x100/38b6ff/ffffff?text=SOMPETRO';">
+                                    <div>
+                                        <h3 class="text-base font-bold text-white">SOMPETROLEUM RATES</h3>
+                                        <p class="text-xs text-slate-400">Qiimaha Shidaalka Maanta</p>
+                                    </div>
+                                </div>
+                                <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold rounded-full flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Live Rate
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4 my-6">
+                                <div class="bg-slate-950/80 p-4 rounded-2xl border border-slate-800 hover:border-emerald-500/30 transition">
+                                    <div class="flex items-center justify-between text-emerald-400 text-xs font-bold mb-2">
+                                        <span>DIESEL</span>
+                                        <i class="fa-solid fa-oil-can text-sm"></i>
+                                    </div>
+                                    <div class="text-3xl font-extrabold text-white tracking-tight">$1.08</div>
+                                    <div class="text-[11px] text-slate-400 mt-1">USD / Hal Liter</div>
+                                </div>
+
+                                <div class="bg-slate-950/80 p-4 rounded-2xl border border-slate-800 hover:border-rose-500/30 transition">
+                                    <div class="flex items-center justify-between text-rose-400 text-xs font-bold mb-2">
+                                        <span>PETROL</span>
+                                        <i class="fa-solid fa-gas-pump text-sm"></i>
+                                    </div>
+                                    <div class="text-3xl font-extrabold text-white tracking-tight">$1.15</div>
+                                    <div class="text-[11px] text-slate-400 mt-1">USD / Hal Liter</div>
+                                </div>
+                            </div>
+
+                            <div class="bg-sky-950/30 border border-sky-800/40 rounded-xl p-4 flex items-start gap-3">
+                                <i class="fa-solid fa-shield-halved text-sky-400 text-lg mt-0.5"></i>
+                                <p class="text-xs text-sky-200 leading-relaxed">
+                                    Macaamiisha leh kaadhadhka gaadiidka ama akoonnada ka diiwaan gashan SomPetroleum waxay xisaabtooda ka eegi karaan qaybta <strong class="text-white">Portal-ka Macaamiisha</strong> ee hoose.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENT PORTAL SECTION (MULTI-ACCOUNT READ-ONLY VIEW) -->
+        <section id="portal" class="py-16 bg-slate-950 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold mb-2">
+                            <i class="fa-solid fa-lock"></i> Kala Socod Kaliya (Read-Only Customer Portal)
+                        </div>
+                        <h2 class="text-3xl font-black text-white tracking-tight">Portal-ka Macaamiisha - SomPetroleum</h2>
+                        <p class="text-slate-400 text-sm mt-1">Kala dooro akoonnada macaamiisha si aad u eegto warbixinta shidaalka iyo haraaga xisaabta.</p>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="flex items-center gap-3">
+                        <button onclick="openLoginModal()" class="no-print bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition shadow">
+                            <i class="fa-solid fa-key text-amber-400"></i> Login Modal
+                        </button>
+                        <button onclick="window.print()" class="no-print bg-sky-600 hover:bg-sky-500 text-white font-semibold px-4 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition shadow shadow-sky-500/20">
+                            <i class="fa-solid fa-print"></i> Daabac Warbixinta (Print Statement)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Account Switcher Bar -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5 mb-8 no-print shadow-xl">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="flex items-center gap-3 w-full md:w-auto">
+                            <i class="fa-solid fa-users-gear text-sky-400 text-lg"></i>
+                            <span class="text-sm font-bold text-slate-200">Doorqo Akoonka Macmiilka:</span>
+                        </div>
+                        
+                        <div class="w-full md:w-auto flex-grow max-w-xl">
+                            <select id="accountSelector" onchange="switchAccount(this.value)" class="w-full bg-slate-950 border border-sky-500/50 rounded-xl px-4 py-3 text-sm text-amber-400 font-bold focus:outline-none focus:border-sky-400 shadow-inner">
+                                <option value="ACC-1001">MAAXDA (ACC-1001)</option>
+                                <option value="ACC-1002">KAYSELABA-QAABLE (ACC-1002)</option>
+                                <option value="ACC-1003">DALLO GROUP (ACC-1003)</option>
+                                <option value="ACC-1004">MAXAMED-ISMACIL (ACC-1004)</option>
+                                <option value="ACC-1005">BADBAADO-BUS (ACC-1005)</option>
+                                <option value="ACC-1006">SAFARSALAMA-BUS (ACC-1006)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Read-Only Notice Banner -->
+                <div class="bg-gradient-to-r from-slate-900 via-sky-950/40 to-slate-900 border border-sky-500/30 rounded-2xl p-4 mb-8 flex items-center gap-4 shadow-lg no-print">
+                    <div class="w-11 h-11 rounded-xl bg-sky-500/20 flex items-center justify-center text-sky-400 shrink-0 border border-sky-500/30">
+                        <i class="fa-solid fa-eye text-xl"></i>
+                    </div>
+                    <div class="text-xs sm:text-sm text-slate-300">
+                        <span class="font-bold text-sky-400">OGEYSIIS MUHIIM AH:</span> Akoon kasta oo aad ku jirto waa qaybta daawashada xisaabta kaliya (<span class="text-white font-semibold">Read-Only Access</span>). Waxaad awoodaa oo kaliya inaad xisaabtaada kala socoto, dib u eegto nambarada gaadhiga, iyo wadarta lacagta.
+                    </div>
+                </div>
+
+                <!-- Summary Dashboard Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+                    <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl shadow-md">
+                        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">Macmiilka / Shirkadda</div>
+                        <div class="text-xl font-bold text-white truncate" id="summaryCustomer">MAAXDA</div>
+                        <div class="text-xs text-sky-400 mt-2 font-medium flex items-center justify-between">
+                            <span><i class="fa-solid fa-building"></i> Akoon Firfircoon</span>
+                            <span id="summaryAccID" class="font-mono text-slate-400 font-bold">ACC-1001</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl shadow-md">
+                        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">Wadarta Shidaalka (Liter)</div>
+                        <div class="text-2xl font-black text-amber-400" id="summaryLiters">0 L</div>
+                        <div class="text-xs text-slate-400 mt-2 flex items-center gap-1">
+                            <i class="fa-solid fa-gas-pump text-amber-400"></i> Diesel & Petrol
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl shadow-md">
+                        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">Total-ka Dhammaan ($)</div>
+                        <div class="text-2xl font-black text-emerald-400" id="summaryTotal">$0.00</div>
+                        <div class="text-xs text-slate-400 mt-2 flex items-center gap-1">
+                            <i class="fa-solid fa-receipt text-emerald-400"></i> Wadarta Shidaal Qaadashada
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl shadow-md">
+                        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-1">Baaqiga Xisaabta Hada</div>
+                        <div class="text-2xl font-black text-sky-400" id="summaryBalance">$0.00</div>
+                        <div class="text-xs text-slate-400 mt-2 flex items-center gap-1">
+                            <i class="fa-solid fa-wallet text-sky-400"></i> Baaqiga Guud ee Hada
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search & Filters Container -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5 mb-6 no-print shadow-md">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <!-- Search Bar -->
+                        <div class="relative w-full sm:w-80">
+                            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                            <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Raadi Gaadhi ID, Taariikh ama Meter..." class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition">
+                        </div>
+
+                        <!-- Fuel Type Filters -->
+                        <div class="flex items-center gap-2 w-full sm:w-auto overflow-x-auto pb-1 sm:pb-0">
+                            <span class="text-xs text-slate-400 font-semibold mr-1 hidden md:inline">Nooca Shidaalka:</span>
+                            <button onclick="setFilter('ALL')" id="filterALL" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-sky-600 text-white transition">Dhammaan</button>
+                            <button onclick="setFilter('DIESEL')" id="filterDIESEL" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Diesel Only</button>
+                            <button onclick="setFilter('PETROL')" id="filterPETROL" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Petrol Only</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN TRANSACTION TABLE CARD -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl print-card">
+                    
+                    <!-- Print Header (Only visible when printing statement) -->
+                    <div class="hidden print-only p-6 border-b border-slate-300">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <img src="sommm_4.jpeg" alt="Logo" class="w-14 h-14 object-contain rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/100x100/38b6ff/ffffff?text=SOMPETRO';">
+                                <div>
+                                    <h1 class="text-2xl font-black text-black">SOMPETROLEUM COMPANY LTD.</h1>
+                                    <p class="text-sm text-gray-600 font-bold">Warbixinta Xisaabta Shidaalka Macmiilka</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-xs text-gray-500">Tareekhda Daabacaadda:</div>
+                                <div class="text-sm font-bold text-black" id="printDate">27-Oct-2026</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs sm:text-sm text-slate-300">
+                            <thead class="bg-slate-950 text-slate-400 uppercase tracking-wider text-[11px] font-bold border-b border-slate-800">
+                                <tr>
+                                    <th scope="col" class="px-5 py-4">Taariikhda</th>
+                                    <th scope="col" class="px-5 py-4">Magaca Macmiilka</th>
+                                    <th scope="col" class="px-5 py-4">Gaadhiga / Card ID</th>
+                                    <th scope="col" class="px-5 py-4">Nooca Shidaalka</th>
+                                    <th scope="col" class="px-5 py-4 text-right">Qiimaha/Liter</th>
+                                    <th scope="col" class="px-5 py-4 text-right">Liteerska</th>
+                                    <th scope="col" class="px-5 py-4 text-right">Total-ka ($)</th>
+                                    <th scope="col" class="px-5 py-4 text-right">Meter-kii Hore</th>
+                                    <th scope="col" class="px-5 py-4 text-right">Baaqiga Guud ($)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transactionTableBody" class="divide-y divide-slate-800/80 font-medium">
+                                <!-- JavaScript populates table rows here -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- No Data Found Notice -->
+                    <div id="noDataNotice" class="hidden p-12 text-center text-slate-400">
+                        <i class="fa-solid fa-magnifying-glass-minus text-4xl text-slate-600 mb-3 block"></i>
+                        Muu helin xog u dhanta raadintaada. Fadlan dib u eeg nambarka gaadhiga ama taariikhda.
+                    </div>
+
+                    <!-- Table Footer Stats Bar -->
+                    <div class="bg-slate-950/80 px-5 py-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <div>Safka muuqda: <span id="recordCount" class="text-white font-bold">0</span> qodob</div>
+                        <div class="flex items-center gap-1.5 text-slate-500">
+                            <i class="fa-solid fa-lock text-xs text-amber-500"></i> System Read-Only Protected
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FUEL COST CALCULATOR FOR FLEETS -->
+        <section id="calculator" class="py-16 border-t border-slate-800 bg-slate-900/30 no-print">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-sky-400 font-bold text-xs uppercase tracking-widest block mb-2">XISAABIYAHA GAADIIDKA</span>
+                    <h2 class="text-3xl font-extrabold text-white">Xisaabi Qiimaha Shidaalka ee Gaadiidkaaga</h2>
+                    <p class="text-slate-400 mt-2 text-sm">Geli tirada baabuurtaada iyo masaafada si aad u ogaato inta shidaal ee bishii aad u baahan tahay.</p>
+                </div>
+
+                <div class="max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Tirada Baabuurta</label>
+                            <input type="number" id="calcVehicles" value="5" min="1" onchange="calculateFleetCost()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-white font-bold focus:outline-none focus:border-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Liter Maalintii / Gaadhi</label>
+                            <input type="number" id="calcDailyLiters" value="25" min="1" onchange="calculateFleetCost()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-white font-bold focus:outline-none focus:border-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Nooca Shidaalka</label>
+                            <select id="calcFuelType" onchange="calculateFleetCost()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-sky-400 font-bold focus:outline-none focus:border-sky-500">
+                                <option value="1.08">Diesel ($1.08/L)</option>
+                                <option value="1.15">Petrol ($1.15/L)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Result Box -->
+                    <div class="bg-slate-950 border border-sky-500/30 rounded-2xl p-6 text-center">
+                        <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Lama Saadaaliyay (30 Maalmood)</div>
+                        <div class="text-3xl sm:text-4xl font-black text-emerald-400 my-2" id="calcResultAmount">$4,050.00</div>
+                        <div class="text-xs text-sky-300" id="calcResultLiters">Total: 3,750 Liter oo Shidaal ah</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES & MARKETING SECTION -->
+        <section id="services" class="py-20 border-t border-slate-800 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-sky-400 font-bold text-xs uppercase tracking-widest block mb-2">MAXAA NOO DOORANAYSAA?</span>
+                    <h2 class="text-3xl font-extrabold text-white">Adeegyada SomPetroleum Company</h2>
+                    <p class="text-slate-400 mt-3 text-sm leading-relaxed">Waxaan bixinaa adeegyo shidaal oo hufan oo loogu talagalay shirkadaha waaweyn, gaadiidka dawladda, iyo shakhsiyaadka.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-sky-500/50 transition duration-300">
+                        <div class="w-14 h-14 bg-sky-500/10 text-sky-400 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-sky-500/20">
+                            <i class="fa-solid fa-truck-droplet"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Shidaal Gaadhsiin (Bulk Delivery)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Waxaan shidaal tayo sare leh toos kuugu leenahay goobtaada shaqo ama kaamaradaada iyadoo la isticmaalayo booyadaha waaweyn.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-amber-500/50 transition duration-300">
+                        <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-amber-500/20">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Kaadhadhka Gaadiidka (Fleet Cards)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            U samayso kaadhadh gaadiidkaaga si aad u xakameyso isticmaalka shidaalka maalin kasta adigoo portal-kan ka daawanaya.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-red-500/50 transition duration-300">
+                        <div class="w-14 h-14 bg-red-500/10 text-red-400 rounded-2xl flex items-center justify-center text-2xl mb-6 border border-red-500/20">
+                            <i class="fa-solid fa-vial-circle-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Baaritaan & Tayo Dammaanad</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Shidaalkeenu wuxuu maraa baaritaanno Shaybaarka dhexdiisa ah si looga fogaado biyo ama uskag wax yeelaya matoorka gaadhiga.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-16 border-t border-slate-800 bg-slate-900/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center">
+                        <div class="relative">
+                            <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-white p-4 shadow-2xl flex items-center justify-center border-4 border-sky-400">
+                                <img src="sommm_4.jpeg" alt="SomPetroleum Logo" class="w-full h-full object-contain rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/200x200/38b6ff/ffffff?text=SOMPETRO';">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest block mb-2">SHIRKADDA SOMPETROLEUM</span>
+                        <h2 class="text-3xl font-black text-white mb-4">Shidaal Tayo Sare & Kalsooni Waarta</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            SomPetroleum Company waxay ka mid tahay shirkadaha ugu waaweyn ee bixiya adeegyada shidaalka nafta iyo bansiinka. Waxaan ku sifaownay keenista shidaal nadiif ah oo dhowraya matoorada baabuurta iyo matoorada waaweyn.
+                        </p>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-sky-400"></i> Shidaal lagu baaray baaritaanno tayo leh.
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-sky-400"></i> Nidaamka kaadhadhka shidaalka ee gaadiidka ganacsiga.
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-sky-400"></i> Portal-ka kala socodka xisaabta ee macaamiisha (Read-Only).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER & CONTACT -->
+        <footer id="contact" class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-sm no-print">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-white p-0.5 border border-sky-400 flex items-center justify-center">
+                            <img src="sommm_4.jpeg" alt="SomPetroleum Logo" class="w-full h-full object-contain rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/100x100/38b6ff/ffffff?text=SOMPETRO';">
+                        </div>
+                        <span class="text-lg font-black text-white tracking-wider">SOMPETROLEUM</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Shirkadda SomPetroleum waxay kuugu adeegaysaa shidaal tayo sare leh iyo maamul xisaabeed dijitaal ah.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3">Xiriirka Shirkadda</h4>
+                    <p class="text-xs mb-2.5 flex items-center gap-2"><i class="fa-solid fa-phone text-sky-400"></i> +252 63 XXX XXXX / +252 61 XXX XXXX</p>
+                    <p class="text-xs mb-2.5 flex items-center gap-2"><i class="fa-solid fa-envelope text-sky-400"></i> info@sompetroleum.so</p>
+                    <p class="text-xs flex items-center gap-2"><i class="fa-solid fa-location-dot text-sky-400"></i> Jidka Weyn, Somalia / Somaliland</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3">Akoonnada Macaamiisha</h4>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#portal" onclick="switchAccount('ACC-1001')" class="hover:text-white transition">MAAXDA (ACC-1001)</a></li>
+                        <li><a href="#portal" onclick="switchAccount('ACC-1002')" class="hover:text-white transition">KAYSELABA-QAABLE (ACC-1002)</a></li>
+                        <li><a href="#portal" onclick="switchAccount('ACC-1003')" class="hover:text-white transition">DALLO GROUP (ACC-1003)</a></li>
+                        <li><a href="#portal" onclick="switchAccount('ACC-1004')" class="hover:text-white transition">MAXAMED-ISMACIL (ACC-1004)</a></li>
+                        <li><a href="#portal" onclick="switchAccount('ACC-1005')" class="hover:text-white transition">BADBAADO-BUS (ACC-1005)</a></li>
+                        <li><a href="#portal" onclick="switchAccount('ACC-1006')" class="hover:text-white transition">SAFARSALAMA-BUS (ACC-1006)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-3">Nidaamka Aaminka Ah</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Dhammaan xisaabaadka halkan ku qorani waxay ku xidhan yihiin server-ka SomPetroleum Company. Waa kuwo la ilaaliyay (Read-Only).
+                    </p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-slate-900 text-center text-xs text-slate-500">
+                &copy; 2026 SOMPETROLEUM COMPANY LTD. Dhammaan xuquuqaha waa dhowran yihiin. (Customer Read-Only Dashboard)
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- CLIENT LOGIN MODAL -->
+    <div id="loginModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeLoginModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 rounded-full bg-white p-1 mx-auto mb-3 border-2 border-sky-400 flex items-center justify-center">
+                    <img src="sommm_4.jpeg" alt="SomPetroleum Logo" class="w-full h-full object-contain rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/100x100/38b6ff/ffffff?text=SOMPETRO';">
+                </div>
+                <h3 class="text-xl font-black text-white">Galo Akoonka Macmiilka</h3>
+                <p class="text-xs text-slate-400 mt-1">Geli Account ID-gaaga ama dooro magacaaga si aad xisaabtaada u eegto.</p>
+            </div>
+
+            <form onsubmit="handleLoginSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Dooro Macmiilka</label>
+                    <select id="modalAccSelect" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white font-semibold focus:outline-none focus:border-sky-500">
+                        <option value="ACC-1001">MAAXDA (ACC-1001)</option>
+                        <option value="ACC-1002">KAYSELABA-QAABLE (ACC-1002)</option>
+                        <option value="ACC-1003">DALLO GROUP (ACC-1003)</option>
+                        <option value="ACC-1004">MAXAMED-ISMACIL (ACC-1004)</option>
+                        <option value="ACC-1005">BADBAADO-BUS (ACC-1005)</option>
+                        <option value="ACC-1006">SAFARSALAMA-BUS (ACC-1006)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Passcode / PIN (Koodhka Aaminka)</label>
+                    <input type="password" placeholder="••••••••" value="123456" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-sky-500">
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold py-3 rounded-xl transition shadow-lg shadow-sky-500/20 text-sm">
+                    Fura Akoonka Hada
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Multi-Account Data Logic -->
+    <script>
+        // Database of accounts requested by user
+        const accountsDatabase = {
+            "ACC-1001": {
+                customerName: "MAAXDA",
+                accountId: "ACC-1001",
+                cumulativeBalance: 6840.50,
+                transactions: [
+                    { date: "26-Oct-26", vehicleId: "G9012", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 110, total: 118.80, meterRef: "8120", balance: 6840.50 },
+                    { date: "24-Oct-26", vehicleId: "G9012", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 95, total: 102.60, meterRef: "8050", balance: 6721.70 },
+                    { date: "21-Oct-26", vehicleId: "G3100", fuelType: "PETROL", pricePerLiter: 1.15, liters: 60, total: 69.00, meterRef: "4510", balance: 6619.10 },
+                    { date: "18-Oct-26", vehicleId: "G9012", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 130, total: 140.40, meterRef: "7980", balance: 6550.10 }
+                ]
+            },
+            "ACC-1002": {
+                customerName: "KAYSELABA-QAABLE",
+                accountId: "ACC-1002",
+                cumulativeBalance: 4120.00,
+                transactions: [
+                    { date: "25-Oct-26", vehicleId: "G5510", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 150, total: 162.00, meterRef: "12040", balance: 4120.00 },
+                    { date: "23-Oct-26", vehicleId: "G5510", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 140, total: 151.20, meterRef: "11900", balance: 3958.00 },
+                    { date: "20-Oct-26", vehicleId: "G7721", fuelType: "PETROL", pricePerLiter: 1.15, liters: 80, total: 92.00, meterRef: "6300", balance: 3806.80 }
+                ]
+            },
+            "ACC-1003": {
+                customerName: "DALLO GROUP",
+                accountId: "ACC-1003",
+                cumulativeBalance: 5254.32,
+                transactions: [
+                    { date: "25-Oct-26", vehicleId: "G4021", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 41, total: 44.28, meterRef: "7226", balance: 5254.32 },
+                    { date: "24-Oct-26", vehicleId: "G4021", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 65, total: 70.20, meterRef: "7185", balance: 5210.04 },
+                    { date: "22-Oct-26", vehicleId: "G1099", fuelType: "PETROL", pricePerLiter: 1.15, liters: 50, total: 57.50, meterRef: "3490", balance: 5139.84 },
+                    { date: "20-Oct-26", vehicleId: "G4021", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 80, total: 86.40, meterRef: "7120", balance: 5082.34 }
+                ]
+            },
+            "ACC-1004": {
+                customerName: "MAXAMED-ISMACIL",
+                accountId: "ACC-1004",
+                cumulativeBalance: 3290.15,
+                transactions: [
+                    { date: "26-Oct-26", vehicleId: "G2288", fuelType: "PETROL", pricePerLiter: 1.15, liters: 75, total: 86.25, meterRef: "5120", balance: 3290.15 },
+                    { date: "22-Oct-26", vehicleId: "G2288", fuelType: "PETROL", pricePerLiter: 1.15, liters: 70, total: 80.50, meterRef: "5040", balance: 3203.90 },
+                    { date: "19-Oct-26", vehicleId: "G1104", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 100, total: 108.00, meterRef: "3310", balance: 3123.40 }
+                ]
+            },
+            "ACC-1005": {
+                customerName: "BADBAADO-BUS",
+                accountId: "ACC-1005",
+                cumulativeBalance: 8910.00,
+                transactions: [
+                    { date: "26-Oct-26", vehicleId: "BUS-01", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 200, total: 216.00, meterRef: "24100", balance: 8910.00 },
+                    { date: "25-Oct-26", vehicleId: "BUS-02", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 220, total: 237.60, meterRef: "31050", balance: 8694.00 },
+                    { date: "23-Oct-26", vehicleId: "BUS-01", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 190, total: 205.20, meterRef: "23890", balance: 8456.40 },
+                    { date: "21-Oct-26", vehicleId: "BUS-03", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 210, total: 226.80, meterRef: "18200", balance: 8251.20 }
+                ]
+            },
+            "ACC-1006": {
+                customerName: "SAFARSALAMA-BUS",
+                accountId: "ACC-1006",
+                cumulativeBalance: 7450.80,
+                transactions: [
+                    { date: "26-Oct-26", vehicleId: "SAF-101", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 180, total: 194.40, meterRef: "19400", balance: 7450.80 },
+                    { date: "24-Oct-26", vehicleId: "SAF-102", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 175, total: 189.00, meterRef: "15200", balance: 7256.40 },
+                    { date: "22-Oct-26", vehicleId: "SAF-101", fuelType: "DIESEL", pricePerLiter: 1.08, liters: 185, total: 199.80, meterRef: "19180", balance: 7067.40 }
+                ]
+            }
+        };
+
+        let activeAccountKey = "ACC-1001";
+        let currentFilter = 'ALL';
+        let searchQuery = '';
+
+        // Switch Active Account
+        function switchAccount(accKey) {
+            activeAccountKey = accKey;
+            document.getElementById("accountSelector").value = accKey;
+            renderTable();
+        }
+
+        // Render Active Account Data
+        function renderTable() {
+            const currentAcc = accountsDatabase[activeAccountKey];
+            const tableBody = document.getElementById("transactionTableBody");
+            const noDataNotice = document.getElementById("noDataNotice");
+            tableBody.innerHTML = "";
+
+            let totalLitersSum = 0;
+            let totalAmountSum = 0;
+            let visibleCount = 0;
+
+            const filteredData = currentAcc.transactions.filter(item => {
+                const matchesFilter = currentFilter === 'ALL' || item.fuelType === currentFilter;
+                const matchesSearch = currentAcc.customerName.toLowerCase().includes(searchQuery) ||
+                                      item.vehicleId.toLowerCase().includes(searchQuery) ||
+                                      item.date.toLowerCase().includes(searchQuery) ||
+                                      item.meterRef.toLowerCase().includes(searchQuery);
+                return matchesFilter && matchesSearch;
+            });
+
+            filteredData.forEach(item => {
+                totalLitersSum += item.liters;
+                totalAmountSum += item.total;
+                visibleCount++;
+
+                const row = document.createElement("tr");
+                row.className = "hover:bg-slate-800/50 transition";
+
+                const isDiesel = item.fuelType === "DIESEL";
+                const badgeClass = isDiesel 
+                    ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" 
+                    : "bg-rose-500/10 text-rose-400 border-rose-500/20";
+                const iconClass = isDiesel ? "fa-oil-can" : "fa-gas-pump";
+
+                row.innerHTML = `
+                    <td class="px-5 py-4 whitespace-nowrap text-slate-200 font-semibold">${item.date}</td>
+                    <td class="px-5 py-4 whitespace-nowrap text-white font-bold">${currentAcc.customerName}</td>
+                    <td class="px-5 py-4 whitespace-nowrap">
+                        <span class="bg-slate-800 border border-slate-700 text-slate-300 px-2.5 py-1 rounded-md text-xs font-mono font-bold">
+                            ${item.vehicleId}
+                        </span>
+                    </td>
+                    <td class="px-5 py-4 whitespace-nowrap">
+                        <span class="px-2.5 py-1 rounded-full text-[11px] font-bold border ${badgeClass} inline-flex items-center gap-1.5">
+                            <i class="fa-solid ${iconClass}"></i> ${item.fuelType}
+                        </span>
+                    </td>
+                    <td class="px-5 py-4 whitespace-nowrap text-right font-mono text-slate-300">$ ${item.pricePerLiter.toFixed(2)}</td>
+                    <td class="px-5 py-4 whitespace-nowrap text-right font-bold text-amber-400 font-mono">${item.liters} L</td>
+                    <td class="px-5 py-4 whitespace-nowrap text-right font-extrabold text-white font-mono">$ ${item.total.toFixed(2)}</td>
+                    <td class="px-5 py-4 whitespace-nowrap text-right text-slate-400 font-mono text-xs">${item.meterRef}</td>
+                    <td class="px-5 py-4 whitespace-nowrap text-right font-bold text-sky-400 font-mono">$ ${item.balance.toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
+                `;
+
+                tableBody.appendChild(row);
+            });
+
+            // Update Header & Dashboard Stats
+            document.getElementById("summaryCustomer").innerText = currentAcc.customerName;
+            document.getElementById("summaryAccID").innerText = currentAcc.accountId;
+            document.getElementById("summaryLiters").innerText = `${totalLitersSum} L`;
+            document.getElementById("summaryTotal").innerText = `$${totalAmountSum.toFixed(2)}`;
+            document.getElementById("summaryBalance").innerText = `$${currentAcc.cumulativeBalance.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+            document.getElementById("recordCount").innerText = `${visibleCount}`;
+
+            if (visibleCount === 0) {
+                noDataNotice.classList.remove("hidden");
+            } else {
+                noDataNotice.classList.add("hidden");
+            }
+        }
+
+        // Set Filter Type
+        function setFilter(type) {
+            currentFilter = type;
+            ['ALL', 'DIESEL', 'PETROL'].forEach(t => {
+                const btn = document.getElementById(`filter${t}`);
+                if (t === type) {
+                    btn.className = "px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-sky-600 text-white transition shadow";
+                } else {
+                    btn.className = "px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition";
+                }
+            });
+            renderTable();
+        }
+
+        // Search Input Filter
+        function filterTable() {
+            searchQuery = document.getElementById("searchInput").value.toLowerCase().trim();
+            renderTable();
+        }
+
+        // Fleet Cost Calculator Logic
+        function calculateFleetCost() {
+            const v = parseFloat(document.getElementById("calcVehicles").value) || 0;
+            const l = parseFloat(document.getElementById("calcDailyLiters").value) || 0;
+            const rate = parseFloat(document.getElementById("calcFuelType").value) || 1.08;
+
+            const totalLitersMonth = v * l * 30;
+            const totalCostMonth = totalLitersMonth * rate;
+
+            document.getElementById("calcResultAmount").innerText = `$${totalCostMonth.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+            document.getElementById("calcResultLiters").innerText = `Total: ${totalLitersMonth.toLocaleString()} Liter oo Shidaal ah bishii`;
+        }
+
+        // Modal Controls
+        function openLoginModal() {
+            document.getElementById("loginModal").classList.remove("hidden");
+        }
+        function closeLoginModal() {
+            document.getElementById("loginModal").classList.add("hidden");
+        }
+        function handleLoginSubmit(e) {
+            e.preventDefault();
+            const selectedAcc = document.getElementById("modalAccSelect").value;
+            switchAccount(selectedAcc);
+            closeLoginModal();
+            window.location.hash = "portal";
+        }
+
+        // Init page load
+        window.onload = function() {
+            renderTable();
+            calculateFleetCost();
+            
+            // Set print date
+            const today = new Date();
+            const dateStr = today.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+            if (document.getElementById("printDate")) {
+                document.getElementById("printDate").innerText = dateStr;
+            }
+        };
+    </script>
+</body>
+</html>
